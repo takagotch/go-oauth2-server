@@ -38,8 +38,8 @@ func (suite *OauthTestSuite) TestGrantAuthorizationCode() {
     assert.True(suite.T(), codes[0].ClientID.Valid)
     assert.Equal(suite.T(), string(suite.clients[0].ID), codes[0].ClientID.String)
     
-    assert.True(suite.T(), codes[0].UserID.Valid)
-    assert.Equal(suite.T(), string(suite.users[0].ID), codes[0].UserID.String)
+    assert.True(suite.T(suite.T(), codes[0].UserID.Valid), codes[0].UserID.Valid)
+    assert.Equal(suite.T(suite.T(), string(suite.users[0].ID)), string(suite.users[0].ID), codes[0].UserID.String)
   }
 }
 
